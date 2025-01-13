@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LIFF + Next.js + Supabase Authentication Sample
 
-## Getting Started
+このリポジトリは、LIFFアプリケーションにおけるNext.jsとSupabaseを使用した認証フローのサンプル実装です。
+Blogは[Qiita: LIFFとNext.js, Supabaseを組み合わせる](url)または、[原文: LIFFとNext.js, Supabaseを組み合わせる](blog_ja.md)をご覧ください。
 
-First, run the development server:
+実際の動作例は以下のLINE Botで確認できます：
+https://line.me/R/oaMessage/@807rpwtd
+
+![QRコード](https://example.com/qr.png)
+
+## 機能
+
+✅ LINEアプリからの起動時の自動ログイン
+✅ ブラウザからアクセスした際のLINEログインへの誘導
+✅ ログイン後の元のページへのリダイレクト
+✅ 開発環境でのモックログイン
+
+## 技術スタック
+
+- [Next.js](https://nextjs.org/) - Reactフレームワーク
+- [LIFF SDK](https://developers.line.biz/en/docs/liff/overview/) - LINE Front-end Framework
+- [Supabase](https://supabase.com/) - バックエンド・認証基盤
+- [TypeScript](https://www.typescriptlang.org/) - 型安全な開発
+
+## セットアップ
+
+1. 環境変数の設定:
+
+```bash
+cp .env.sample .env.local
+```
+
+以下の環境変数を設定してください：
+- `NEXT_PUBLIC_LIFF_ID`: LIFFアプリのID
+- `NEXT_PUBLIC_SUPABASE_URL`: SupabaseのプロジェクトURL
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY`: Supabaseの匿名キー
+
+2. Supabaseのセットアップ:
+
+```bash
+# Supabaseプロジェクトの起動
+supabase start
+
+# マイグレーションの実行
+supabase migration up
+```
+
+3. 依存関係のインストール:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+4. 開発サーバーの起動:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ライセンス
 
-## Learn More
+Apache-2.0
 
-To learn more about Next.js, take a look at the following resources:
+## コントリビューション
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Issue、PR大歓迎です！
