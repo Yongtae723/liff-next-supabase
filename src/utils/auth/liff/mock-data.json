@@ -1,0 +1,50 @@
+{
+  "profile": [
+    {
+      "displayName": "USER-U0000001",
+      "userId": "U0000001",
+      "pictureUrl": "https://placehold.jp/3d4070/ffffff/150x150.png?text=U0000001"
+    },
+    {
+      "displayName": "USER-U0000002",
+      "userId": "U0000002"
+    },
+    {
+      "displayName": "USER-U0000003",
+      "userId": "U0000003",
+      "pictureUrl": "https://placehold.jp/cb3f10/ffffff/150x150.png?text=U0000003"
+    },
+    {
+      "displayName": "USER-U0000004",
+      "userId": "U0000004",
+      "pictureUrl": "https://placehold.jp/10cb52/ffffff/150x150.png?text=U0000004"
+    },
+    {
+      "displayName": "USER-U0000005",
+      "userId": "U0000005",
+      "pictureUrl": "https://placehold.jp/10cb52/ffffff/150x150.png?text=U0000005"
+    }
+  ],
+  "scanCode": [
+    {
+      "userId": "U0000001",
+      "value": "https://line.me/ja/"
+    },
+    {
+      "userId": "U0000002",
+      "value": "https://yahoo.co.jp"
+    },
+    {
+      "userId": "U0000003",
+      "value": "https://bing.com"
+    },
+    {
+      "userId": "U0000004",
+      "value": "https://amazon.co.jp"
+    },
+    {
+      "userId": "U0000005",
+      "value": "https://google.com"
+    }
+  ]
+}

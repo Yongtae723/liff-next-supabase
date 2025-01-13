@@ -6,16 +6,21 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "format": "biome check --write .",
+    "lint": "biome check ."
   },
   "dependencies": {
+    "@line/liff": "^2.24.0",
+    "@line/liff-mock": "^1.0.3",
+    "@supabase/ssr": "^0.5.2",
     "next": "15.1.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
     "@eslint/eslintrc": "^3",
-    "@types/node": "^20",
+    "@types/node": "^20.17.11",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
