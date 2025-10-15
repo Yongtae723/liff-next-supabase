@@ -1,6 +1,11 @@
 # LIFF + Next.js + Supabase Authentication Sample
 
 このリポジトリは、LIFFアプリケーションにおけるNext.jsとSupabaseを使用した認証フローのサンプル実装です。
+
+## フルスタックテンプレート
+
+LINE Botまで含んだfull stack templateは[@https://github.com/Yongtae723/LineBot-liff-golang-nextjs-template](https://github.com/Yongtae723/LineBot-liff-golang-nextjs-template)をご覧ください。
+
 Blogは[Qiita: LIFFとNext.js, Supabaseを組み合わせる](url)または、[原文: LIFFとNext.js, Supabaseを組み合わせる](blog_ja.md)をご覧ください。
 
 実際の動作例は以下のLINE Botで確認できます：
