@@ -1,3 +1,5 @@
+
+
 # LIFF + Next.js + Supabase Authentication Sample
 
 このリポジトリは、LIFFアプリケーションにおけるNext.jsとSupabaseを使用した認証フローのサンプル実装です。
@@ -39,6 +41,7 @@ cp .env.sample .env.local
 - `NEXT_PUBLIC_LIFF_ID`: LIFFアプリのID
 - `NEXT_PUBLIC_SUPABASE_URL`: SupabaseのプロジェクトURL
 - `NEXT_PUBLIC_SUPABASE_ANON_KEY`: Supabaseの匿名キー
+- `SUPABASE_SERVICE_ROLE`: Supabaseのサービスロールキー
 
 2. Supabaseのセットアップ:
 
